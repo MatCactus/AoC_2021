@@ -15,7 +15,7 @@ console.log(`Part 1: ${counter}`);
 
 counter = 0;
 for (let i in file) {
-    if (i > 0 && i < file.length-1 && +file[i] + +file[+i+1] + +file[+i+2] > +file[+i-1] + +file[i]+ +file[+i+1]) counter++
+    if (i > 0 && i < file.length-2 && +file[i] + +file[+i+1] + +file[+i+2] > +file[+i-1] + +file[i]+ +file[+i+1]) counter++
 }
 
 console.log(`Part 2: ${counter}`)
